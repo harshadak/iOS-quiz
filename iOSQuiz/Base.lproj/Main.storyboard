@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qe-Ay-SO6">
+                                <rect key="frame" x="20" y="48.5" width="51" height="30"/>
+                                <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="answerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="37W-VH-yzW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzQ-oa-nAb">
+                                <rect key="frame" x="716" y="48.5" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I50-Qb-tSo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the first step to iOS development?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3C-Y3-rTb">
+                                <rect key="frame" x="20" y="20" width="728" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l24-fR-sLC">
+                                <rect key="frame" x="0.0" y="512" width="768" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="TzQ-oa-nAb" secondAttribute="trailing" id="6fR-es-ySL"/>
+                            <constraint firstAttribute="trailing" secondItem="l24-fR-sLC" secondAttribute="trailing" id="Br4-Dr-ULq"/>
+                            <constraint firstItem="2qe-Ay-SO6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Dh2-su-11g"/>
+                            <constraint firstItem="l24-fR-sLC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GAg-f1-qPY"/>
+                            <constraint firstItem="l24-fR-sLC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ru7-lq-Pwf"/>
+                            <constraint firstItem="D3C-Y3-rTb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Stg-uv-bHo"/>
+                            <constraint firstItem="TzQ-oa-nAb" firstAttribute="baseline" secondItem="2qe-Ay-SO6" secondAttribute="baseline" id="UeD-MS-gGj"/>
+                            <constraint firstAttribute="trailing" secondItem="l24-fR-sLC" secondAttribute="trailing" id="Vpg-GO-CoI"/>
+                            <constraint firstItem="l24-fR-sLC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oCH-W0-407"/>
+                            <constraint firstItem="D3C-Y3-rTb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pMa-Ok-5lC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D3C-Y3-rTb" secondAttribute="trailing" id="u04-ZC-wuE"/>
+                            <constraint firstItem="2qe-Ay-SO6" firstAttribute="top" secondItem="D3C-Y3-rTb" secondAttribute="bottom" constant="8" symbolic="YES" id="xb3-S1-Nbz"/>
+                            <constraint firstItem="D3C-Y3-rTb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yTp-1n-NZu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="l24-fR-sLC" id="mo3-fg-y5u"/>
+                        <outlet property="questionLabel" destination="D3C-Y3-rTb" id="hEv-TL-Sys"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-34.375" y="110.15625"/>
+        </scene>
+    </scenes>
+</document>
